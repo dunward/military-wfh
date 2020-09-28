@@ -55,8 +55,21 @@ namespace HMP
             string documentId = "1WK2kHrNyha5TwcZ6GANDqBKAIkCGXapBWCvXc7MlLmA";
             DocumentsResource.GetRequest request = service.Documents.Get(documentId);
             var doc = request.Execute();
-            MessageBox.Show(doc.Body.Content[0].ToString());
 
+            List<Request> requests = new List<Request>();
+            var t = new Request();
+            t.ReplaceAllText = new ReplaceAllTextRequest()
+            {
+                ContainsText = new SubstringMatchCriteria() { Text = "{Name}" },
+                ReplaceText = "Test",
+            };
+
+            requests.Add(t);
+
+            BatchUpdateDocumentRequest body = new BatchUpdateDocumentRequest { Requests = requests };
+
+            service.Documents.BatchUpdate(body, documentId).Execute();
+            
 
             //var service = new DriveService(new BaseClientService.Initializer()
             //{
