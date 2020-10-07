@@ -1,11 +1,5 @@
-﻿using Newtonsoft.Json.Linq;
-using PdfSharp.Drawing;
-using PdfSharp.Pdf;
-using PdfSharp.Pdf.IO;
-using System;
-using System.Drawing;
-using System.IO;
-using System.Reflection.Metadata;
+﻿using System.IO;
+using Newtonsoft.Json.Linq;
 
 namespace military_wfh
 {

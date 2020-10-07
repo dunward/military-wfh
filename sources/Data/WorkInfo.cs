@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace military_wfh
+﻿namespace military_wfh
 {
     public class WorkInfo
     {

@@ -1,7 +1,4 @@
 ﻿using Newtonsoft.Json.Linq;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace military_wfh
 {
@@ -14,7 +11,7 @@ namespace military_wfh
 
         public MilitaryPdfInfo(JObject jsonObject)
         {
-            this.jsonObject = jsonObject;   
+            this.jsonObject = jsonObject;
 
             Solider = new Solider(
                 jsonObject["name"].ToString(),
