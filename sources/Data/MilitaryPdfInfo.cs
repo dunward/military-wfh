@@ -7,7 +7,7 @@ namespace military_wfh
 {
     public class MilitaryPdfInfo
     {
-        private JObject jsonObject;
+        private readonly JObject jsonObject;
 
         public Solider Solider { get; }
         public string CeoName { get => jsonObject["ceoName"].ToString(); }
