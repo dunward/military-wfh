@@ -38,7 +38,7 @@ namespace military_wfh
             DrawWorkInfoTables();
             DrawBottomTable();
 
-            document.Save($"{DateTime.Now:yyyy-MM-dd-ss}.pdf");
+            document.Save($"{DateTime.Now:yyyy-MM-dd-HH-mm-ss}.pdf");
         }
 
         private void DrawSoldierInformation()
