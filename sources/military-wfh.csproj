@@ -6,4 +6,9 @@
     <RootNamespace>military_wfh</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="PdfSharp" Version="1.50.5147" />
+    <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
+  </ItemGroup>
+
 </Project>
