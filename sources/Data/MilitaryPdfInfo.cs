@@ -7,11 +7,15 @@ namespace military_wfh
 {
     public class MilitaryPdfInfo
     {
+        private JObject jsonObject;
+
         public Solider Solider { get; }
-        public string CeoName { get; }
+        public string CeoName { get => jsonObject["ceoName"].ToString(); }
 
         public MilitaryPdfInfo(JObject jsonObject)
         {
+            this.jsonObject = jsonObject;   
+
             Solider = new Solider(
                 jsonObject["name"].ToString(),
                 jsonObject["birth"].ToString(),
@@ -22,8 +26,6 @@ namespace military_wfh
                 jsonObject["address"].ToString(),
                 jsonObject.Value<JArray>("workInfos")
                 );
-
-            CeoName = jsonObject["ceoName"].ToString();
         }
     }
 }
