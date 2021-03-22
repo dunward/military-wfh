@@ -1,4 +1,6 @@
-﻿using System.IO;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
 using Newtonsoft.Json.Linq;
 
 namespace military_wfh
@@ -11,7 +13,7 @@ namespace military_wfh
             MilitaryPdfInfo info = new MilitaryPdfInfo(obj);
 
             PdfGenerator generator = new PdfGenerator(info);
-            generator.SaveGeneratePdfFile();
+            generator.GeneratePdfFiles();
         }
     }
 }

@@ -15,5 +15,11 @@ namespace military_wfh
 
             return new DateTime(year, month, day);
         }
+
+        public static bool IsWeekDay(DateTime dateTime)
+        {
+            var dayOfWeek = dateTime.DayOfWeek;
+            return !(dayOfWeek == DayOfWeek.Saturday || dayOfWeek == DayOfWeek.Sunday);
+        }
     }
 }
