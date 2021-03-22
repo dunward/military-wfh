@@ -1,7 +1,7 @@
 ﻿using System;
-using PdfSharp.Drawing;
-using PdfSharp.Pdf;
-using PdfSharp.Pdf.IO;
+using PdfSharpCore.Drawing;
+using PdfSharpCore.Pdf;
+using PdfSharpCore.Pdf.IO;
 
 namespace military_wfh
 {
@@ -29,7 +29,7 @@ namespace military_wfh
             System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
 
             graphics = XGraphics.FromPdfPage(page);
-            font = new XFont("Malgun Gothic", 9);
+            font = new XFont("나눔고딕", 9);
         }
 
         public void SaveGeneratePdfFile()
