@@ -5,6 +5,7 @@
 
 ## How to use this?
 https://github.com/weisswolfi/military-wfh/releases/tag/2.0 를 설치한뒤 압축을 해제합니다.
+사용을 위해 .net core 3.1버전 이상을 요구합니다. https://dotnet.microsoft.com/download 에서 설치할 수 있습니다.
 ### Windows
 윈도우 환경에서는 military-wfh.exe를 실행하면 pdf들을 생성해줍니다.
 ### Mac
