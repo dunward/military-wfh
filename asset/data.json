@@ -1,21 +1,24 @@
 {
-    "fontName": "나눔 고딕",
+    "fontName": "Malgun Gothic",
     "name": "홍길동",
     "birth": "1901/01/01",
     "startDate": "2099/12/31",
     "division": "서울지방병무청",
     "phoneNumber": "010-0000-0000",
-    "workingDate": "2020/06/01~2020/06/05",
     "address": "서울특별시 어딘가에있는 기나긴 주소",
     "wfhStartDate": "2020/12/1",
     "wfhLastDate": "2021/3/1",
     "wfhWorkingStartTime": "10:00",
-    "wfhWorkingLastTime": "19:00",
-    "wfhWorkingDescription": "이러한 개발을 하였다",
+    "wfhWorkingEndTime": "19:00",
+    "description": "이러한 개발을 하였다",
+    "specialMondayDescription": "",
+    "specialFridayDescription": "특별한 금요일 설명",
     "ceoName": "대표명",
     "restDates": [
         "2020/12/2",
         "2020/12/3",
+        "2020/12/28",
+        "2020/12/29",
         "2021/2/15"
     ]
 }
