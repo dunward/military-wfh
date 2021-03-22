@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Newtonsoft.Json.Linq;
 
 namespace military_wfh
@@ -26,7 +27,6 @@ namespace military_wfh
             WorkInfos = GenerateWorkInformation(workInfos);
         }
 
-        // TODO: Autometric Generate Work Information
         private List<WorkInfo> GenerateWorkInformation(JArray workInfos)
         {
             var infos = new List<WorkInfo>();
@@ -42,17 +42,6 @@ namespace military_wfh
             }
 
             return infos;
-        }
-
-        public override string ToString()
-        {
-            return $"Name : {Name}\n" +
-                $"Birth : {Birth}\n" +
-                $"StartDate : {StartDate}\n" +
-                $"Division : {Division}\n" +
-                $"PhoneNumber : {PhoneNumber}\n" +
-                $"WorkingDate : {WorkingDate}\n" +
-                $"Address : {Address}\n";
         }
     }
 }
