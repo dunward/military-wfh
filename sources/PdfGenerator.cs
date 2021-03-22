@@ -61,12 +61,7 @@ namespace military_wfh
                     if (startDate.DayOfWeek == DayOfWeek.Sunday) break;
                 }
 
-                foreach (var w in weekDays)
-                {
-                    Console.WriteLine($"{w} {w.DayOfWeek}");
-                }
                 SaveGeneratePdfFile(weekDays);
-                Console.WriteLine("split");
             }
         }
 
@@ -77,6 +72,7 @@ namespace military_wfh
             DrawBottomTable(weekDays[^1]);
 
             document.Save($"From {weekDays[0]:yyyy-MM-dd} To {weekDays[^1]:yyyy-MM-dd}.pdf");
+            Console.WriteLine($"Generate 'From {weekDays[0]:yyyy-MM-dd} To {weekDays[^1]:yyyy-MM-dd}.pdf'");
             Clear();
         }
 
